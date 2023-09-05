@@ -11,7 +11,7 @@ import bg7 from "@/public/assets/gallery/g.jpg";
 import bg8 from "@/public/assets/gallery/h.jpg";
 import bg9 from "@/public/assets/gallery/i.jpg";
 
-
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   EffectCoverflow,
@@ -25,10 +25,36 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 const images = [
-  bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9
+  bg3, bg2, bg8, bg4, bg5, bg6, bg7, bg1, bg9
 ];
 
 export default function Gallery() {
+
+  const [slidesPerView, setSlidesPerView] = useState(3); // Default value
+
+  useEffect(() => {
+    // Function to determine the appropriate number of slidesPerView
+    const calculateSlidesPerView = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setSlidesPerView(2);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    // Add an event listener to update slidesPerView when the window is resized
+    window.addEventListener('resize', calculateSlidesPerView);
+
+    // Call the function initially to set the initial value
+    calculateSlidesPerView();
+
+    // Remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('resize', calculateSlidesPerView);
+    };
+  }, []);
+
   return (
     <div className="relative mx-auto">
       <div>
@@ -38,12 +64,12 @@ export default function Gallery() {
         spaceBetween={2}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         loop={true}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
