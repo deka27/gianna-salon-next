@@ -42,7 +42,7 @@ export default function Reviews() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        effect={"fade"}
+        // effect={"fade"}
         loop={true}
         autoplay={{
           delay: 5000,
@@ -58,7 +58,7 @@ export default function Reviews() {
         className="mySwiper"
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="mt-10 bg-[#121212]">
+          <SwiperSlide key={index} className="mt-10">
             <div className="flex flex-col justify-center items-center h-full ">
               <div className="text-center md:text-2xl mx-auto w-3/4">
                 {slide.text}

@@ -42,7 +42,7 @@ export default function Offers() {
         >
           {images.map((image, index) => (
             <SwiperSlide key={index} className="bg-red-800">
-              <div className="w-[90%] md:w-[70%] mx-auto">
+              <div className="w-[100%] md:w-[70%] mx-auto">
                 <Image
                   src={image}
                   alt="Promo"

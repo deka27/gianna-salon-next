@@ -40,10 +40,10 @@ export default function Gallery() {
         centeredSlides={true}
         slidesPerView={3}
         loop={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -61,7 +61,7 @@ export default function Gallery() {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-          <div className="w-full h-64 md:h-[560px]">
+          <div className="md:w-full h-72 md:h-[450px] lg:h-[650px]">
             <Image
               src={image}
               alt="Background Home"
