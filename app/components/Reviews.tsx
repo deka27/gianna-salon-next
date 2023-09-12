@@ -12,24 +12,24 @@ import "swiper/css/effect-fade";
 
 const slides = [
   {
-    text: "I've been searching for the perfect salon for a while, and I finally found it. The team here is passionate about what they do, and it shows. My stylist took the time to consult with me and ensure I got the exact haircut and color I wanted. The end result exceeded my expectations. I appreciate the attention to detail and the warm, friendly atmosphere. I can't wait to return for my next appointment!",
-    author: "John Doe",
+    text: "Awesome service..i have been coming here for hair treatments,waxing and other saloon services .i am really thankful to Roli and Blesson for providing me all the services with great patience care and a friendly manner ...keep up the good work ✌️",
+    author: "Komal Hariyani",
   },
   {
-    text: "I had my first visit to a new salon last week, and I was blown away by the experience. The ambiance was luxurious, and the staff was incredibly professional. My stylist was a true expert. They not only gave me a stunning haircut but also shared valuable tips for maintaining my hair's health. I felt pampered and refreshed by the end of my visit. I'll definitely be a regular customer now!",
-    author: "Jane Smith",
+    text: "Amazing service! The salon is Affordable, hygienic and really helpful staff. Would recommend it to everyone in and around HSR. I’ve been to several walk in parlours, and Giana remains the top choice 😊",
+    author: "Ayushi gaur",
   },
   {
-    text: "I've been a loyal customer of this salon for years, and they never disappoint. The salon offers a wide range of services, and the quality is consistently top-notch. Whether it's a haircut, color, or spa treatment, they always exceed my expectations. The staff is knowledgeable, and they take the time to understand my preferences. I highly recommend this salon for all your beauty needs.",
-    author: "James Johnson",
+    text: "Had visited and got it done facial, pedicure and manicure. The staffs were very well train and so professional. Highly recommend, must visit salon..👍",
+    author: "Eddyaba duo",
   },
   {
-    text: "I can't say enough good things about the salon I visited. Every visit is a treat. The salon is always clean and stylish, and the staff is professional and friendly. My stylist is a true artist. They transformed my hair into a work of art. I leave the salon feeling confident and beautiful every time.",
-    author: "Kirk Boor",
+    text: "Good salon, very professional, recently I have done hair color, satisfied with the service. 💇‍♀️",
+    author: "Htoi San",
   },
   {
-    text: "I recently had a fantastic experience at a salon. The staff was incredibly welcoming and attentive from the moment I walked in. My stylist did an amazing job with my hair. They listened to my preferences and gave me the perfect haircut and color. The salon had a relaxing atmosphere, and I left feeling like a million bucks. I'll definitely be back!",
-    author: "Santo Barr",
+    text: "Life’s more beautiful when you meet the right hairdresser 😍 hair Smoothening done by Hapolo",
+    author: "Thaikho Raveinai",
   },
 ];
 
