@@ -43,9 +43,9 @@ const Contact = () => {
         <form
         //  onSubmit={sendEmail} 
          className="flex flex-col justify-center items-center space-y-6">
-          <input type="text" name='name' placeholder='Your Full Name' required className="w-full p-6 rounded-lg bg-white border-2 border-primary-variant" />
-          <input type="email" name='email' placeholder='Your Email' required className="w-full p-6 rounded-lg bg-white border-2 border-primary-variant" />
-          <textarea name="message" placeholder='Your Message' required className="w-full p-6 rounded-lg bg-white border-2 border-primary-variant"></textarea>
+          <input type="text" name='name' placeholder='Your Full Name' required className="w-full p-6 rounded-lg  border-2 border-primary-variant" />
+          <input type="email" name='email' placeholder='Your Email' required className="w-full p-6 rounded-lg border-2 border-primary-variant" />
+          <textarea name="message" placeholder='Your Message' required className="w-full p-6 rounded-lg border-2 border-primary-variant"></textarea>
           <div className='flex justify-center items-center bg-[#121212] w-auto h-auto p-3 rounded-lg'><button type='submit'>Send Message</button></div>
         </form>
       </div>

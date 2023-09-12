@@ -92,8 +92,8 @@ export default function Gallery() {
               src={image}
               alt="Background Home"
               layout="fill"
-              objectFit="cover"
-              className="rounded-xl"
+              // objectFit="cover"
+              className="rounded-xl object-cover fill-inherit"
             />
           </div>
         </SwiperSlide>

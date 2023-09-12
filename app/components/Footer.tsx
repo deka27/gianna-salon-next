@@ -4,7 +4,7 @@ import {BiLogoTwitter, BiLogoFacebook, BiLogoInstagram, BiLogoYoutube} from 'rea
 
 export default function Footer() {
   return (
-    <div className="bg-red-800">
+    <div className="relative bg-red-800 z-10">
 
       <div className="relative bg-blueGray-200 pt-8 pb-6">
 
@@ -41,7 +41,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="/about"
                       >
                         About Us
                       </a>
@@ -49,25 +49,25 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="/booking"
                       >
-                        Blog
+                        Booking
                       </a>
                     </li>
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="/team"
                       >
-                        Github
+                        Team
                       </a>
                     </li>
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="/contact"
                       >
-                        Free Products
+                        Contact
                       </a>
                     </li>
                   </ul>
@@ -80,9 +80,9 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="/services"
                       >
-                        MIT License
+                        Services
                       </a>
                     </li>
                     <li>
@@ -106,7 +106,7 @@ export default function Footer() {
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                         href=""
                       >
-                        Contact Us
+                        Modubix
                       </a>
                     </li>
                   </ul>

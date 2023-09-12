@@ -16,7 +16,7 @@ export default function Map() {
         width="100%"
         height="100%"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        // referrerpolicy="no-referrer-when-downgrade"
         className='h-[600px] rounded-xl'
       ></Iframe>
       </div>

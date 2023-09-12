@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className="mx-6 my-36">
         <div className="text-2xl md:text-4xl font-bold mt-16 mb-6 text-center">Welcome to Gianna!!!</div>
-        <div className="text-sm md:text-xl text-center mx-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a rhoncus ligula, ac rhoncus risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Nulla dapibus vulputate arcu, imperdiet posuere urna feugiat quis. Donec vehicula a tortor eu rhoncus. Cras sit amet mollis lacus. Donec feugiat fermentum mauris. Donec sit amet nibh dapibus, pharetra tortor ut, egestas erat. Maecenas ac diam ut est commodo euismod vel quis risus. Aliquam porttitor velit vel facilisis consequat. Cras ut diam quis sem molestie pellentesque. Phasellus porttitor venenatis augue, sed tempus nibh posuere id. Donec blandit scelerisque risus, quis vestibulum erat porta in. Aliquam ut gravida nunc.</div>
+        <div className="w-4/6 mx-auto text-sm md:text-xl text-center my-16">Welcome to Gianna Beauty Salon, where every visit is a cherished moment of self-care and rejuvenation. Our doors open to a world of warmth and expertise, where our skilled professionals are dedicated to bringing out your inner radiance. Come experience the tranquility of our sanctuary, relax in the comfort of our chairs, and let us transform your beauty aspirations into reality. Gianna Beauty Salon is not just a destination; it&apos;s an oasis of serenity and style, where you&apos;re not just a client, but a cherished guest. Step inside and let us pamper you to perfection.</div>
       </div>
 
       <div className="my-16">

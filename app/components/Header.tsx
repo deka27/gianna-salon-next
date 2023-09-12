@@ -19,38 +19,38 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Hair Services",
-    href: "/",
+    href: "/services/hair",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Discover the latest trends in hair styling and care.",
   },
   {
     title: "Manicure & Pedicure",
-    href: "/",
+    href: "/services/manipedi",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Pamper your hands and feet with our luxurious treatments.",
   },
   {
     title: "Hair Removal",
-    href: "/",
+    href: "/services/hairwax",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Say goodbye to unwanted hair with our professional waxing services.",
   },
   {
     title: "Spa Services",
-    href: "/",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    href: "/services/spa",
+    description: "Relax and rejuvenate with our soothing spa treatments.",
   },
   {
     title: "Facials",
-    href: "/",
+    href: "/services/facial",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Experience the ultimate glow with our facial therapies.",
   },
   {
     title: "All Services",
-    href: "/",
+    href: "/services",
     description:
-      "Click here to see all services offered by our salon",
+      "Explore our complete range of beauty and wellness services.",
   },
 ];
 
@@ -90,16 +90,16 @@ export default function Header() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/" title="About">
+              <ListItem href="/about" title="About">
                Know about our Salon
               </ListItem>
               {/* <ListItem href="/" title="Blog">
                Lookout for the lastest trends on our blog
               </ListItem> */}
-              <ListItem href="/" title="Booking">
+              <ListItem href="/booking" title="Booking">
                 Book your appointments for services 
               </ListItem> 
-              <ListItem href="/" title="Team">
+              <ListItem href="/team" title="Team">
                Know the team, their expertise and personality
               </ListItem>              
             </ul>
@@ -124,7 +124,7 @@ export default function Header() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="https://www.google.com" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Connect
             </NavigationMenuLink>

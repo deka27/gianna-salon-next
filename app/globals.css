@@ -16,6 +16,29 @@ html {
   display: none;
 }
 
-.swiper-pagination-bullet{
-  background-color: white !important;
+.swiper-button-prev {
+  color: red !important;
+}
+
+.swiper-button-next {
+  color: red !important;
+}
+
+/* Media query for screens smaller than or equal to 768 */
+@media (max-width: 768) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 30px !important;   
+    
+  }
+}
+
+
+/* Media query for screens smaller than or equal to 576px */
+@media (max-width: 576px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;   
+    
+  }
 }
