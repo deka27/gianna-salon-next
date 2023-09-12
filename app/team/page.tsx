@@ -71,8 +71,8 @@ function TeamMember({ name, role, description }: TeamMemberProps) {
       </div>
       <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
         <p className="text-lg font-bold">{name}</p>
-        <p className="mb-4 text-xs text-white opacity-30">{role}</p>
-        <p className="mb-4 text-sm tracking-wide text-white opacity-30">
+        <p className="mb-4 text-xs  opacity-30">{role}</p>
+        <p className="mb-4 text-sm tracking-wide opacity-30">
           {description}
         </p>
         <div className="flex items-center space-x-3">
