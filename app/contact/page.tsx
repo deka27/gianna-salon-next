@@ -61,7 +61,7 @@ return (
                       Phone Number
                     </div>
                     <p className="text-base text-body-color">
-                      (+62)81 414 257 9980
+                    (+91)-78993-05457
                     </p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ return (
                       Email Address
                     </div>
                     <p className="text-base text-body-color">
-                      info@yourdomain.com
+                    giannabeautysalon@gmail.com
                     </p>
                   </div>
                 </div>

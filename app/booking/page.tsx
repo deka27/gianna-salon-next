@@ -1,24 +1,58 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Booking() {
+  const services = [
+    { value: "Hair", label: "Hair  Service" },
+    { value: "Spa", label: "Spa Service" },
+    { value: "Facial", label: "Facial Service" },
+    { value: "Hair Removal", label: "Hair Removal" },
+    { value: "Others", label: "Others" },
+  ];
+
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
+  const [selectAll, setSelectAll] = useState(false);
+
+  const toggleService = (value: string) => {
+    if (selectedServices.includes(value)) {
+      setSelectedServices(
+        selectedServices.filter((service) => service !== value)
+      );
+    } else {
+      setSelectedServices([...selectedServices, value]);
+    }
+  };
+
+  const handleSelectAll = () => {
+    if (selectAll) {
+      setSelectedServices([]);
+    } else {
+      setSelectedServices(services.map((service) => service.value));
+    }
+    setSelectAll(!selectAll);
+  };
+
   return (
     <div className="">
       <div className="flex items-center flex-col justify-center px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-red-800 uppercase rounded-full bg-teal-accent-400">
-            Bookings
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-red-800 uppercase rounded-full bg-teal-accent-400">
+              Bookings
+            </p>
+          </div>
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <span className="relative">We</span>
+            </span>{" "}
+            offer a wide range of services to suit your needs.
+          </h2>
+          <p className="text-base text-gray-700 md:text-lg">
+            Effortlessly book your desired services with our skilled team of
+            salon professionals and indulge in a personalized beauty experience.
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-          <span className="relative inline-block">
-            
-            <span className="relative">We</span>
-          </span>{" "}
-          offer a wide range of services to suit your needs.
-        </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-        Effortlessly book your desired services with our skilled team of salon professionals and indulge in a personalized beauty experience.
-        </p>
-      </div>
         <div className="mx-auto w-full max-w-[550px]">
           <form>
             <div className="-mx-3 flex flex-wrap">
@@ -69,9 +103,35 @@ export default function Booking() {
                 name="guest"
                 id="guest"
                 placeholder="5"
-                min="0"
+                min="1"
                 className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-transparent py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
               />
+            </div>
+
+            <div className="mb-5">
+              <label
+                htmlFor="guest"
+                className="mb-3 block text-base font-medium "
+              >
+                Services
+              </label>
+
+              <div className="flex flex-col">
+                {services.map((service) => (
+                  <label key={service.value}>
+                    <input
+                      type="checkbox"
+                      value={service.value}
+                      checked={selectedServices.includes(service.value)}
+                      onChange={() => toggleService(service.value)}
+                    />{" "}
+                    {service.label}
+                  </label>
+                ))}
+              </div>
+              <div>
+                <p>Selected Services: {selectedServices.join(", ")}</p>
+              </div>
             </div>
 
             <div className="-mx-3 flex flex-wrap">
