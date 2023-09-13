@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div className="">
       <div className="lg:h-full md:h-[100px] sm:h-[50px] bg-white"></div>
-    <div className="relative h-screen flex flex-col-reverse py-10 lg:pt-0 lg:flex-col lg:pb-0 bg-white">
-      <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+    <div className="relative h-full flex flex-col-reverse py-10 lg:pt-0 lg:flex-col lg:pb-0 bg-white">
+      <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
           viewBox="0 0 100 100"
