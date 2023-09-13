@@ -42,7 +42,7 @@ export default function Booking() {
               Bookings
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
               <span className="relative">We</span>
             </span>{" "}
@@ -129,7 +129,7 @@ export default function Booking() {
                   </label>
                 ))}
               </div>
-              <div>
+              <div className="my-2">
                 <p>Selected Services: {selectedServices.join(", ")}</p>
               </div>
             </div>

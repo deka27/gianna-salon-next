@@ -20,8 +20,8 @@ export default function Offers() {
   return (
     <div className="my-36 bg-red-800">
       <div className="mx-auto my-6 p-8">
-        <div className="text-4xl font-bold text-center my-6">Offers</div>
-        <div className="mx-auto text-center text-sm md:text-xl w-4/6">
+        <div className="text-4xl font-bold text-center my-6 text-white dark:text-black">Offers</div>
+        <div className="mx-auto text-center text-sm md:text-xl w-4/6 text-white dark:text-black">
           Exciting news! We are offering special discounts on our salon
           services. Treat yourself or a loved one to a day of pampering without
           breaking the bank. Book now and enjoy our fantastic offers!

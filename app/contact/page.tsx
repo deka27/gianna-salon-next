@@ -19,9 +19,7 @@ return (
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-base leading-relaxed mb-9 text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                At Gianna, we value your inquiries and feedback. Our dedicated team is always ready to assist you with any questions or appointment requests. Feel free to reach out to us. We look forward to hearing from you and helping you achieve your beauty and wellness goals. Your satisfaction is our priority, and we can&apos;t wait to pamper you at our salon soon!
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-white bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -88,7 +86,7 @@ return (
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
+              <div className="relative p-8 bg-gray-600 dark:bg-white rounded-lg shadow-lg sm:p-12">
                 <form>
                   <ContactInputBox
                     type="text"
@@ -114,7 +112,7 @@ return (
                   <div>
                     <button
                       type="submit"
-                      className="w-full p-3 bg-red-800 transition border rounded border-primary bg-primary hover:bg-opacity-90"
+                      className="w-full p-3 bg-red-800 text-white transition rounded hover:bg-opacity-90"
                     >
                       Send Message
                     </button>
@@ -944,7 +942,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }: { row: number
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="border-[f0f0f0] w-full resize-none rounded border py-3 px-[14px] bg-gray-500 text-white outline-none focus:border-primary focus-visible:shadow-none placeholder-white"
+          className="border-[f0f0f0] w-full resize-none rounded border py-3 px-[14px] dark:bg-gray-500 text-black dark:text-white outline-none focus:border-primary focus-visible:shadow-none dark:placeholder-white"
           defaultValue={defaultValue}
         />
       </div>
@@ -961,7 +959,7 @@ const ContactInputBox = ({ type, placeholder, name }: {type: string, placeholder
           type={type}
           placeholder={placeholder}
           name={name}
-          className="border-[f0f0f0] w-full rounded border py-3 px-[14px] bg-gray-500 text-white outline-none focus-visible:shadow-none placeholder-white"
+          className="border-[f0f0f0] w-full rounded border py-3 px-[14px] dark:bg-gray-500 text-black dark:text-white outline-none focus-visible:shadow-none dark:placeholder-white"
         />
       </div>
     </>

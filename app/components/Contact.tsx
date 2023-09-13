@@ -19,8 +19,8 @@ const Contact = () => {
   return (
     <div id='contact' className='p-6'>
       <div className='my-16'>
-      <div className='text-center text-4xl font-bold'>Get in touch</div>
-      <div className='text-center text-2xl font-semibold'>Contact us</div>
+      <div className='text-center text-4xl font-bold text-white dark:text-black'>Get in touch</div>
+      <div className='text-center text-2xl font-semibold text-white dark:text-black'>Contact us</div>
       </div>
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 my-16">
